@@ -12,17 +12,26 @@ public class LevelManager : MonoBehaviour
         TRANSTION,
     }
     
+    //Day state variables
     [SerializeField]
     private GameState state;
+    private GameState lastState;
     [SerializeField]
-    private float time;
-    [SerializeField]
-    private float timeSpeed;
+    private float currStateTime;
+
+    public float stateTime;
+    public float stateTimeSpeed;
+
+    //Transition variables
+    private float transitionTime;
+    public float transitionTimeSpeed;
 
     void Start()
     {
         state = GameState.DAY;
-        time = 0.0f;
+        currStateTime = stateTime;
+        transitionTime = 0.0f;
+        SetSkyboxTime(transitionTime);
     }
 
     void Update()
@@ -35,39 +44,68 @@ public class LevelManager : MonoBehaviour
             case GameState.NIGHT:
                 UpdateNight();
                 break;
+            case GameState.TRANSTION:
+                UpdateTransition();
+                break;
             default:
                 break;
         }
+    }
 
-        UpdateLighting(time);
+    private void UpdateTransition()
+    {
+        if (lastState == GameState.DAY)
+        {
+            transitionTime += transitionTimeSpeed * Time.deltaTime;
+        }
+        else if (lastState == GameState.NIGHT)
+        {
+            transitionTime -= transitionTimeSpeed * Time.deltaTime;
+        }
+
+        SetSkyboxTime(transitionTime);
 
         CheckTimeValue();
     }
 
     private void UpdateNight()
     {
-        time -= timeSpeed * Time.deltaTime;
+        UpdateStateTime();
+        //Night logic
     }
 
     private void UpdateDay()
     {
-        time += timeSpeed * Time.deltaTime;
+        UpdateStateTime();
+        //Day logic
+    }
+
+    private void UpdateStateTime()
+    {
+        currStateTime -= stateTimeSpeed * Time.deltaTime;
+        if (currStateTime <= 0)
+        {
+            lastState = state;
+            state = GameState.TRANSTION;
+        }
     }
 
     private void CheckTimeValue()
     {
-        if (time >= 1)
+        if (transitionTime >= 1)
         {
+            currStateTime = stateTime;
             state = GameState.NIGHT;
         }
-        else if (time <= 0)
+        else if (transitionTime <= 0)
         {
+            currStateTime = stateTime;
             state = GameState.DAY;
         }
     }
 
-    private void UpdateLighting(float timePercent)
+    private void SetSkyboxTime(float value)
     {
-        RenderSettings.skybox.SetFloat("_CubemapTransition", timePercent);
+        RenderSettings.skybox.SetFloat("_CubemapTransition", value);
     }
 }
