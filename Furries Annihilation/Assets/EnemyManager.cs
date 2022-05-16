@@ -16,11 +16,13 @@ public class EnemyManager : MonoBehaviour
     [SerializeField]
     private Transform playerPos;
 
+    [SerializeField]
     private EnemyState state;
 
-    private NavMeshAgent agent;
+    [SerializeField]
+    private ParticleSystem deathParticle;
 
-    private Collider range;
+    private NavMeshAgent agent;
 
     private Animator anim;
 
@@ -29,8 +31,6 @@ public class EnemyManager : MonoBehaviour
         playerPos = GameObject.Find("Player").transform;
 
         agent = GetComponent<NavMeshAgent>();
-
-        range = GetComponent<Collider>();
 
         state = EnemyState.MOVE;
 
@@ -47,12 +47,22 @@ public class EnemyManager : MonoBehaviour
             case EnemyState.ATTACK:
                 break;
             case EnemyState.DIE:
+                anim.SetTrigger("Spin");
                 break;
             case EnemyState.HIT:
                 break;
             default:
                 break;
         }
+    }
+
+    private void Explosion()
+    {
+        ParticleSystem particles = Instantiate(deathParticle, transform.position, transform.rotation, GameObject.Find("pendingToDelete").transform);
+
+        Destroy(particles.gameObject, 2.0f);
+
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
