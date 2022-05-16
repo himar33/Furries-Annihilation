@@ -43,6 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e465e6f125d0c342bdf1550fee6c3b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateTime: 1
+  state: 0
+  currStateTime: 0
+  stateTime: 10
   stateTimeSpeed: 0.1
   transitionTimeSpeed: 0.1
