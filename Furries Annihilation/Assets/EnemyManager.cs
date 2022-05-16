@@ -26,8 +26,9 @@ public class EnemyManager : MonoBehaviour
 
     void Start()
     {
+        playerPos = GameObject.Find("Player").transform;
+
         agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(playerPos.position);
 
         range = GetComponent<Collider>();
 
