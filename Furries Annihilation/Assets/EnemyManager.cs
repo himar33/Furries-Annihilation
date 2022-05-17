@@ -15,6 +15,10 @@ public class EnemyManager : MonoBehaviour
 
     [SerializeField]
     private Transform playerPos;
+    [SerializeField]
+    private PlayerManager player;
+    [SerializeField]
+    private float dmgHit;
 
     [SerializeField]
     private EnemyState state;
@@ -23,8 +27,8 @@ public class EnemyManager : MonoBehaviour
     private ParticleSystem deathParticle;
 
     private NavMeshAgent agent;
-
     private Animator anim;
+    private bool canHit = false;
 
     void Start()
     {
@@ -35,6 +39,8 @@ public class EnemyManager : MonoBehaviour
         state = EnemyState.MOVE;
 
         anim = GetComponent<Animator>();
+
+        player = FindObjectOfType<PlayerManager>();
     }
 
     private void Update()
@@ -65,10 +71,17 @@ public class EnemyManager : MonoBehaviour
         Destroy(gameObject);
     }
 
+    private void Hit()
+    {
+        if (canHit) player.Hitted(dmgHit);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "PlayerRange")
         {
+            canHit = true;
+
             state = EnemyState.ATTACK;
             agent.isStopped = true;
             anim.SetTrigger("Clicked");
@@ -79,6 +92,8 @@ public class EnemyManager : MonoBehaviour
     {
         if (other.tag == "PlayerRange")
         {
+            canHit = false;
+
             state = EnemyState.MOVE;
             agent.isStopped = false;
             anim.SetTrigger("Walk");
