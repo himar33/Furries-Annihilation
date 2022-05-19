@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4018716651141618176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.83986, y: -0.00000047683716, z: -1.2407367}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1191058, y: 0.9762404, z: 1.0840974}
   m_Children:
   - {fileID: 4018716651141318162}
   - {fileID: 4018716651141318200}
@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPos: {fileID: 0}
+  player: {fileID: 0}
+  dmgHit: 5
   state: 0
   deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74, type: 3}
 --- !u!1 &4018716651141618178
@@ -504,7 +506,6 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
