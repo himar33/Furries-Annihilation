@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7171500256097743912}
   - component: {fileID: 7171500256097743913}
   - component: {fileID: 7171500256097743911}
-  - component: {fileID: 7171500256097743909}
+  - component: {fileID: 1294273289588225233}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -137,7 +137,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.65324175
   m_Center: {x: 0, y: 1.1775393, z: 0.024196267}
---- !u!114 &7171500256097743909
+--- !u!114 &1294273289588225233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,10 +146,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7171500256097743906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3015ddea4510c4eaa5e08d7e84d9ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 92898ae98f840db48b450e676a6d357d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerPos: {fileID: 0}
+  player: {fileID: 0}
+  dmgHit: 0
   state: 0
   deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74, type: 3}
 --- !u!1 &7171500256097743908
@@ -504,7 +506,6 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

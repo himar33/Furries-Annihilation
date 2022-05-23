@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyManager : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    enum EnemyState
+    protected enum EnemyState
     {
         MOVE,
         ATTACK,
@@ -14,36 +14,32 @@ public class EnemyManager : MonoBehaviour
     }
 
     [SerializeField]
-    private Transform playerPos;
+    protected Transform playerPos;
     [SerializeField]
-    private PlayerManager player;
+    protected PlayerManager player;
     [SerializeField]
-    private float dmgHit;
+    protected float dmgHit;
 
     [SerializeField]
-    private EnemyState state;
+    protected EnemyState state;
 
     [SerializeField]
-    private ParticleSystem deathParticle;
+    protected ParticleSystem deathParticle;
 
-    private NavMeshAgent agent;
-    private Animator anim;
-    private bool canHit = false;
+    protected NavMeshAgent agent;
+    protected Animator anim;
+    protected bool canHit = false;
 
-    void Start()
+    protected virtual void Start()
     {
         playerPos = GameObject.Find("Player").transform;
-
         agent = GetComponent<NavMeshAgent>();
-
         state = EnemyState.MOVE;
-
         anim = GetComponent<Animator>();
-
         player = FindObjectOfType<PlayerManager>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         switch (state)
         {
@@ -62,7 +58,7 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    private void Explosion()
+    protected void Explosion()
     {
         ParticleSystem particles = Instantiate(deathParticle, transform.position, transform.rotation, GameObject.Find("pendingToDelete").transform);
 
@@ -71,12 +67,12 @@ public class EnemyManager : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void Hit()
+    protected void Hit()
     {
         if (canHit) player.Hitted(dmgHit);
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected void OnTriggerEnter(Collider other)
     {
         if (other.tag == "PlayerRange")
         {
@@ -88,7 +84,7 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    protected void OnTriggerExit(Collider other)
     {
         if (other.tag == "PlayerRange")
         {

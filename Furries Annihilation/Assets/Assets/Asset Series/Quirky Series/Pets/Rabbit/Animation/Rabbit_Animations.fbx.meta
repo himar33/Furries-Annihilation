@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 9e7c9ef6ceb9b494fa7b9ec32b08cae1
 ModelImporter:
-  serializedVersion: 21100
+  serializedVersion: 20200
   internalIDToNameTable:
   - first:
       1: 100000
@@ -234,7 +234,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.28979293
+        functionName: StopWalk
+        data: 
+        objectReferenceParameter: {fileID: 8344496264130045466, guid: 8c6bd2f9043950643ab0bd0b7550880c, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.66576254
+        functionName: ContinueWalk
+        data: 
+        objectReferenceParameter: {fileID: 8344496264130045466, guid: 8c6bd2f9043950643ab0bd0b7550880c, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

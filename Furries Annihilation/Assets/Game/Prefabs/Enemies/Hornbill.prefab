@@ -132,7 +132,6 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -259,7 +258,7 @@ GameObject:
   - component: {fileID: 6522597663116706954}
   - component: {fileID: 6522597663116706955}
   - component: {fileID: 6522597663116706996}
-  - component: {fileID: 6522597663116706998}
+  - component: {fileID: -7458529141851593394}
   m_Layer: 0
   m_Name: Hornbill
   m_TagString: Untagged
@@ -353,7 +352,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &6522597663116706998
+--- !u!114 &-7458529141851593394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -362,10 +361,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6522597663116706999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3015ddea4510c4eaa5e08d7e84d9ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 1130f6f3b6c2cb84d9000040346b4357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerPos: {fileID: 0}
+  player: {fileID: 0}
+  dmgHit: 0
   state: 0
   deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74, type: 3}
 --- !u!1 &6522597663116707001
