@@ -274,7 +274,7 @@ Transform:
   m_GameObject: {fileID: 8344496264130045466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.562302, y: -0.00000047683716, z: 1.8885107}
-  m_LocalScale: {x: 1.068533, y: 1.0205722, z: 1.1505728}
+  m_LocalScale: {x: 1.1054691, y: 0.86789805, z: 1.1468506}
   m_Children:
   - {fileID: 8344496264130083336}
   - {fileID: 8344496264130083362}
@@ -367,7 +367,8 @@ MonoBehaviour:
   player: {fileID: 0}
   dmgHit: 0
   state: 0
-  deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74, type: 3}
+  deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74,
+    type: 3}
 --- !u!1 &8344496264130045468
 GameObject:
   m_ObjectHideFlags: 0

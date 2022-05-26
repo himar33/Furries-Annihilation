@@ -32,11 +32,15 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Start()
     {
-        playerPos = GameObject.Find("Player").transform;
-        agent = GetComponent<NavMeshAgent>();
         state = EnemyState.MOVE;
-        anim = GetComponent<Animator>();
+
+        playerPos = GameObject.Find("Player").transform;
         player = FindObjectOfType<PlayerManager>();
+
+        agent = GetComponent<NavMeshAgent>();
+
+        anim = GetComponent<Animator>();
+        anim.SetTrigger("Walk");
     }
 
     protected virtual void Update()
