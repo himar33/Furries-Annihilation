@@ -13,10 +13,15 @@ public class Enemy : MonoBehaviour
         HIT,
     }
 
+    [Header("Model Data")]
     [SerializeField]
     protected Transform playerPos;
     [SerializeField]
     protected PlayerManager player;
+
+    [Header("Stats")]
+    [SerializeField]
+    protected float velocity;
     [SerializeField]
     protected float dmgHit;
 
