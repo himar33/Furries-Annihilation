@@ -11,6 +11,7 @@ public class m4a2 : MonoBehaviour
     public Transform barrel;
     public AudioSource audioSource;
     public AudioClip audioClip;
+    public ParticleSystem shoteffect;
 
     private bool fire = false;
 
@@ -19,6 +20,7 @@ public class m4a2 : MonoBehaviour
         if (fire == true && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
+            shoteffect.Play();
             GameObject spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
             spawnedBullet.GetComponent<Rigidbody>().velocity = speed * barrel.forward;
             audioSource.PlayOneShot(audioClip);
