@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.0708905, g: 0.35405385, b: 0.97075623, a: 1}
+  m_IndirectSpecularColor: {r: 0.07059998, g: 0.35376143, b: 0.9707859, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
+    agentRadius: 0.2
+    agentHeight: 0.4
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 0.2
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.06666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 58bc63221b55ab0469b298c28c15d32d, type: 2}
 --- !u!1 &3349608
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,8 +138,8 @@ GameObject:
   m_Name: Tree2.002 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3349609
 Transform:
@@ -221,8 +221,8 @@ GameObject:
   m_Name: Tree2.001 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &53760736
 Transform:
@@ -304,8 +304,8 @@ GameObject:
   m_Name: Tree4.028 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &67981289
 Transform:
@@ -372,6 +372,105 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67981288}
   m_Mesh: {fileID: -2786117422793655830, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1001 &69026846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: spawns.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: spawns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1408540649}
+    - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: spawns.Array.data[1]
+      value: 
+      objectReference: {fileID: 375326393}
+    - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: spawns.Array.data[2]
+      value: 
+      objectReference: {fileID: 163739370}
+    - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: spawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 1821826374}
+    - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: spawns.Array.data[4]
+      value: 
+      objectReference: {fileID: 1121726061}
+    - target: {fileID: 3834325481247372925, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 79.13037
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5610447
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.261047
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372927, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d29cf7b23f071745a9ec3f7803b4b43, type: 3}
 --- !u!1 &124329990
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,8 +486,8 @@ GameObject:
   m_Name: Tree2.001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &124329991
 Transform:
@@ -470,8 +569,8 @@ GameObject:
   m_Name: Tree2.048 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &141928679
 Transform:
@@ -538,6 +637,93 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141928678}
   m_Mesh: {fileID: 5856630901601778475, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1001 &163739368
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 362435242}
+    m_Modifications:
+    - target: {fileID: 3335273236435798596, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemySpawn_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5099984
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.917742
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.090004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9435876
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.33112308
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -38.674
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74f423aaa2416e3408690b1781f522d0, type: 3}
+--- !u!4 &163739369 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 163739368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &163739370 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798598, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 163739368}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aafa5098e752b9429e1d84f402222d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &187962917
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,8 +739,8 @@ GameObject:
   m_Name: Tree2.038 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &187962918
 Transform:
@@ -636,8 +822,8 @@ GameObject:
   m_Name: Tree1.038 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &210041412
 Transform:
@@ -719,8 +905,8 @@ GameObject:
   m_Name: Tree1.033 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &224534828
 Transform:
@@ -787,6 +973,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224534827}
   m_Mesh: {fileID: -8169206376775250969, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1001 &249246165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1209605109, guid: 3735274a3b0561e45b10a1d35b948955, type: 3}
+      propertyPath: recoveryMult
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820135711376666752, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390246490822899731, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 78.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.368
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 80.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3735274a3b0561e45b10a1d35b948955, type: 3}
 --- !u!1 &254124410
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,8 +1066,8 @@ GameObject:
   m_Name: Tree4.043 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &254124411
 Transform:
@@ -885,8 +1149,8 @@ GameObject:
   m_Name: Tree4.025 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &280572431
 Transform:
@@ -1042,8 +1306,8 @@ GameObject:
   m_Name: Tree3.022 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &298995856
 Transform:
@@ -1125,8 +1389,8 @@ GameObject:
   m_Name: Tree3.043 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &324391608
 Transform:
@@ -1208,8 +1472,8 @@ GameObject:
   m_Name: Tree2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &349500062
 Transform:
@@ -1276,6 +1540,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349500061}
   m_Mesh: {fileID: -5700080643567655694, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1 &362435241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362435242}
+  m_Layer: 0
+  m_Name: EnemySpawns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362435242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362435241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 84.91022, y: -26.299902, z: 69.835785}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1408540648}
+  - {fileID: 375326392}
+  - {fileID: 163739369}
+  - {fileID: 1821826373}
+  - {fileID: 1121726060}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &373784129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,8 +1590,8 @@ GameObject:
   m_Name: Tree4.019 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &373784130
 Transform:
@@ -1359,6 +1658,93 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373784129}
   m_Mesh: {fileID: 5705476815183491908, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1001 &375326391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 362435242}
+    m_Modifications:
+    - target: {fileID: 3335273236435798596, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemySpawn_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.917742
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9435876
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.33112308
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -38.674
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74f423aaa2416e3408690b1781f522d0, type: 3}
+--- !u!4 &375326392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 375326391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &375326393 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798598, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 375326391}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aafa5098e752b9429e1d84f402222d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &375702832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,8 +1760,8 @@ GameObject:
   m_Name: Tree2.040 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &375702833
 Transform:
@@ -1706,8 +2092,8 @@ GameObject:
   m_Name: Tree1.021 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &390036550
 Transform:
@@ -1789,8 +2175,8 @@ GameObject:
   m_Name: Tree4.002 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &392677226
 Transform:
@@ -1872,8 +2258,8 @@ GameObject:
   m_Name: Tree2.038 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &406408460
 Transform:
@@ -1955,8 +2341,8 @@ GameObject:
   m_Name: Tree3.004 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &414204553
 Transform:
@@ -2038,8 +2424,8 @@ GameObject:
   m_Name: Tree1.007 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &424924586
 Transform:
@@ -2121,8 +2507,8 @@ GameObject:
   m_Name: Tree3.016 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &425708373
 Transform:
@@ -2204,8 +2590,8 @@ GameObject:
   m_Name: Tree3.010 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &435754095
 Transform:
@@ -2287,8 +2673,8 @@ GameObject:
   m_Name: Tree2.048 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &469475381
 Transform:
@@ -2370,8 +2756,8 @@ GameObject:
   m_Name: Tree2.024 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &488802264
 Transform:
@@ -2453,8 +2839,8 @@ GameObject:
   m_Name: Tree2.042 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &510495347
 Transform:
@@ -2536,8 +2922,8 @@ GameObject:
   m_Name: Tree1.018 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &511127014
 Transform:
@@ -2619,8 +3005,8 @@ GameObject:
   m_Name: Tree3.009 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &536900730
 Transform:
@@ -2702,8 +3088,8 @@ GameObject:
   m_Name: Tree2.003 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &590645516
 Transform:
@@ -2785,8 +3171,8 @@ GameObject:
   m_Name: Tree4.014 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &591152641
 Transform:
@@ -2868,8 +3254,8 @@ GameObject:
   m_Name: Tree4.007 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &597265963
 Transform:
@@ -2951,8 +3337,8 @@ GameObject:
   m_Name: Tree3.003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &638851438
 Transform:
@@ -3034,8 +3420,8 @@ GameObject:
   m_Name: Tree2.040 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &639073070
 Transform:
@@ -3117,8 +3503,8 @@ GameObject:
   m_Name: Tree1.012 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &646009543
 Transform:
@@ -3200,8 +3586,8 @@ GameObject:
   m_Name: Tree1.015 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &669858265
 Transform:
@@ -3283,8 +3669,8 @@ GameObject:
   m_Name: Tree2.024 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &676656550
 Transform:
@@ -3442,8 +3828,77 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: 118.485, z: 0}
+--- !u!1001 &709178851
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 52.33223
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.299385
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 72.07779
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8028165
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.3308434
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.45859614
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.1889917
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410538, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721225961130410543, guid: 350f105357a668b4d8e29869e577c844,
+        type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 350f105357a668b4d8e29869e577c844, type: 3}
 --- !u!1 &724248362
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,8 +3914,8 @@ GameObject:
   m_Name: Tree2.043 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &724248363
 Transform:
@@ -3639,8 +4094,8 @@ GameObject:
   m_Name: Tree1.039 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &753898962
 Transform:
@@ -3722,8 +4177,8 @@ GameObject:
   m_Name: Tree2.017 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &783165210
 Transform:
@@ -3805,8 +4260,8 @@ GameObject:
   m_Name: Tree2.037 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &821062254
 Transform:
@@ -3888,8 +4343,8 @@ GameObject:
   m_Name: Tree2.003 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &826470912
 Transform:
@@ -3971,8 +4426,8 @@ GameObject:
   m_Name: Tree4.013 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &837831057
 Transform:
@@ -4039,6 +4494,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837831056}
   m_Mesh: {fileID: 1904754151112444077, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1001 &843631886
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7350216
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1316082
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8077407
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100053, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468275096412100055, guid: e699da5b08de26346ad5a748ee8b391b,
+        type: 3}
+      propertyPath: m_Name
+      value: PostProcess
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e699da5b08de26346ad5a748ee8b391b, type: 3}
 --- !u!1 &867425426
 GameObject:
   m_ObjectHideFlags: 0
@@ -4054,8 +4578,8 @@ GameObject:
   m_Name: Tree1.039 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &867425427
 Transform:
@@ -4137,8 +4661,8 @@ GameObject:
   m_Name: Tree2.002 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &867434224
 Transform:
@@ -4220,8 +4744,8 @@ GameObject:
   m_Name: Tree4.041 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &898148041
 Transform:
@@ -4303,8 +4827,8 @@ GameObject:
   m_Name: Tree3.009 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &912513978
 Transform:
@@ -4386,8 +4910,8 @@ GameObject:
   m_Name: Tree2.020 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &921388454
 Transform:
@@ -4469,8 +4993,8 @@ GameObject:
   m_Name: Tree2.009 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &959938339
 Transform:
@@ -4537,186 +5061,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959938338}
   m_Mesh: {fileID: -1606797294257618967, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
---- !u!1 &963194225
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 963194228}
-  - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
---- !u!20 &963194227
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &963194228
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.117825605, y: 0.775039, z: -0.09477487, w: 0.6135548}
-  m_LocalPosition: {x: 32.79, y: 20.24, z: 72.52}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 16.947, y: 103.859, z: 3.977}
---- !u!82 &963194229
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c436472d6304287488a04e7d17a0d285, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &963672817
 GameObject:
   m_ObjectHideFlags: 0
@@ -4732,8 +5076,8 @@ GameObject:
   m_Name: Tree4.028 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &963672818
 Transform:
@@ -4815,8 +5159,8 @@ GameObject:
   m_Name: Tree4.025 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &964531365
 Transform:
@@ -4898,8 +5242,8 @@ GameObject:
   m_Name: Tree4.022 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1014528745
 Transform:
@@ -4981,8 +5325,8 @@ GameObject:
   m_Name: Tree2.024 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1021985876
 Transform:
@@ -5064,8 +5408,8 @@ GameObject:
   m_Name: Tree4.002 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1031371185
 Transform:
@@ -5132,6 +5476,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031371184}
   m_Mesh: {fileID: 4215102822470392052, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1 &1031622760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031622761}
+  m_Layer: 0
+  m_Name: EnemiesRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1031622761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031622760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 84.11212, y: 3.3449898, z: 81.24824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1035852165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,8 +5521,8 @@ GameObject:
   m_Name: Tree1.014 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1035852166
 Transform:
@@ -5230,8 +5604,8 @@ GameObject:
   m_Name: Tree2.038 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1047923485
 Transform:
@@ -5313,8 +5687,8 @@ GameObject:
   m_Name: Tree3.039 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1073316924
 Transform:
@@ -5396,8 +5770,8 @@ GameObject:
   m_Name: Tree1.015 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1075652801
 Transform:
@@ -5479,8 +5853,8 @@ GameObject:
   m_Name: Tree4.020 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1086105036
 Transform:
@@ -5562,8 +5936,8 @@ GameObject:
   m_Name: Tree3.011 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1113448833
 Transform:
@@ -5630,6 +6004,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113448832}
   m_Mesh: {fileID: -9115379699155731661, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1001 &1121726059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 362435242}
+    m_Modifications:
+    - target: {fileID: 3335273236435798596, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemySpawn_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.917742
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.84400696
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5363322
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -64.869
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798649, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4581736
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798649, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74f423aaa2416e3408690b1781f522d0, type: 3}
+--- !u!4 &1121726060 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1121726059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1121726061 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798598, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1121726059}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aafa5098e752b9429e1d84f402222d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1124028528
 GameObject:
   m_ObjectHideFlags: 0
@@ -5641,7 +6112,7 @@ GameObject:
   - component: {fileID: 1124028530}
   - component: {fileID: 1124028529}
   m_Layer: 0
-  m_Name: SoundWave (1)
+  m_Name: SoundWave_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5659,7 +6130,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 450bb70c7e2cf8f41a1d6c8ae222ad83, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5750,12 +6221,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124028528}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.8, y: 2.6811543, z: 1.9}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23.230389, y: -3.5228415, z: -74.60979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1697942844}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1159619323
 GameObject:
@@ -5772,8 +6243,8 @@ GameObject:
   m_Name: Tree1.032 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1159619324
 Transform:
@@ -5855,8 +6326,8 @@ GameObject:
   m_Name: Tree2.003 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1170767808
 Transform:
@@ -5938,8 +6409,8 @@ GameObject:
   m_Name: Tree2.011 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1205899859
 Transform:
@@ -6021,8 +6492,8 @@ GameObject:
   m_Name: Tree2.017 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1222305201
 Transform:
@@ -6104,8 +6575,8 @@ GameObject:
   m_Name: Tree3.009 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1280909391
 Transform:
@@ -6187,8 +6658,8 @@ GameObject:
   m_Name: Tree3.001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1313765650
 Transform:
@@ -6270,8 +6741,8 @@ GameObject:
   m_Name: Tree3.022 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1316309354
 Transform:
@@ -6353,8 +6824,8 @@ GameObject:
   m_Name: Tree4.041 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1332280737
 Transform:
@@ -6436,8 +6907,8 @@ GameObject:
   m_Name: Tree4.013 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1354334730
 Transform:
@@ -6519,8 +6990,8 @@ GameObject:
   m_Name: Tree1.012 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1397859886
 Transform:
@@ -6587,6 +7058,93 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397859885}
   m_Mesh: {fileID: 1118482785604691063, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1001 &1408540647
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 362435242}
+    m_Modifications:
+    - target: {fileID: 3335273236435798596, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemySpawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.917742
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.94651496
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.32265994
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -37.648
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74f423aaa2416e3408690b1781f522d0, type: 3}
+--- !u!4 &1408540648 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1408540647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1408540649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798598, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1408540647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aafa5098e752b9429e1d84f402222d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1413329684
 GameObject:
   m_ObjectHideFlags: 0
@@ -6602,8 +7160,8 @@ GameObject:
   m_Name: Tree1.027 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1413329685
 Transform:
@@ -6685,8 +7243,8 @@ GameObject:
   m_Name: Tree1.012 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1438788988
 Transform:
@@ -6768,8 +7326,8 @@ GameObject:
   m_Name: Tree2.010 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1443829928
 Transform:
@@ -6851,8 +7409,8 @@ GameObject:
   m_Name: Tree1.002 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1451962510
 Transform:
@@ -6934,8 +7492,8 @@ GameObject:
   m_Name: Tree3.037 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1456842076
 Transform:
@@ -7017,8 +7575,8 @@ GameObject:
   m_Name: Tree3.007 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1480201304
 Transform:
@@ -7100,8 +7658,8 @@ GameObject:
   m_Name: Tree4.008 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1494711431
 Transform:
@@ -7183,8 +7741,8 @@ GameObject:
   m_Name: Tree3.043 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1497091656
 Transform:
@@ -7266,8 +7824,8 @@ GameObject:
   m_Name: Tree3.039 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1542760611
 Transform:
@@ -7349,8 +7907,8 @@ GameObject:
   m_Name: Tree2.001 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1563052673
 Transform:
@@ -7417,54 +7975,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563052672}
   m_Mesh: {fileID: -2966887171921861863, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
---- !u!1 &1579864972
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1579864974}
-  - component: {fileID: 1579864973}
-  m_Layer: 0
-  m_Name: SceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1579864973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579864972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e465e6f125d0c342bdf1550fee6c3b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: 0
-  currStateTime: 0
-  stateTime: 0
-  stateTimeSpeed: 0
-  transitionTimeSpeed: 0
---- !u!4 &1579864974
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579864972}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 79.13037, y: -1.5610447, z: 23.261047}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1597916003
 GameObject:
   m_ObjectHideFlags: 0
@@ -7480,8 +7990,8 @@ GameObject:
   m_Name: Tree1.022 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1597916004
 Transform:
@@ -7563,8 +8073,8 @@ GameObject:
   m_Name: Tree4.028 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1615349722
 Transform:
@@ -7646,8 +8156,8 @@ GameObject:
   m_Name: Tree4.009 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1618174546
 Transform:
@@ -7729,8 +8239,8 @@ GameObject:
   m_Name: Tree4.014 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1632261739
 Transform:
@@ -7797,6 +8307,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632261738}
   m_Mesh: {fileID: -3143767504125439602, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1 &1654622085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1654622086}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1654622086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654622085}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 79.03039, y: 6.2039957, z: 76.50979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1692743399
 GameObject:
   m_ObjectHideFlags: 0
@@ -7812,8 +8352,8 @@ GameObject:
   m_Name: Tree4.013 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1692743400
 Transform:
@@ -7880,6 +8420,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692743399}
   m_Mesh: {fileID: 1904754151112444077, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1 &1697942843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1697942844}
+  m_Layer: 0
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1697942844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697942843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 79.03039, y: 6.2039957, z: 76.50979}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1938337415}
+  - {fileID: 2052568045}
+  - {fileID: 1124028530}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1707046432
 GameObject:
   m_ObjectHideFlags: 0
@@ -7895,8 +8468,8 @@ GameObject:
   m_Name: Tree3.036 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1707046433
 Transform:
@@ -7978,8 +8551,8 @@ GameObject:
   m_Name: Tree1.007 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1723027960
 Transform:
@@ -8061,8 +8634,8 @@ GameObject:
   m_Name: Tree3.036 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1745406724
 Transform:
@@ -8144,8 +8717,8 @@ GameObject:
   m_Name: Tree3.039 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1752648224
 Transform:
@@ -8227,8 +8800,8 @@ GameObject:
   m_Name: Tree2.020 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1766657839
 Transform:
@@ -8310,8 +8883,8 @@ GameObject:
   m_Name: Tree2.022 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1768858381
 Transform:
@@ -8393,8 +8966,8 @@ GameObject:
   m_Name: Tree4.043 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1801228203
 Transform:
@@ -8476,8 +9049,8 @@ GameObject:
   m_Name: Tree3.016 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1807887571
 Transform:
@@ -8559,8 +9132,8 @@ GameObject:
   m_Name: Tree1.007 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1813770464
 Transform:
@@ -8642,8 +9215,8 @@ GameObject:
   m_Name: Tree2.029 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1814337753
 Transform:
@@ -8710,6 +9283,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814337752}
   m_Mesh: {fileID: 3048420753173730671, guid: 6ca3735f4469c044f93acea3efe41ac9, type: 3}
+--- !u!1001 &1821826372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 362435242}
+    m_Modifications:
+    - target: {fileID: 3335273236435798596, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemySpawn_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.917742
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9435876
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.33112308
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -38.674
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798649, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4581736
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335273236435798649, guid: 74f423aaa2416e3408690b1781f522d0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74f423aaa2416e3408690b1781f522d0, type: 3}
+--- !u!4 &1821826373 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798599, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1821826372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1821826374 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3335273236435798598, guid: 74f423aaa2416e3408690b1781f522d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1821826372}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aafa5098e752b9429e1d84f402222d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1840247370
 GameObject:
   m_ObjectHideFlags: 0
@@ -8725,8 +9395,8 @@ GameObject:
   m_Name: Tree1.038 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1840247371
 Transform:
@@ -8808,8 +9478,8 @@ GameObject:
   m_Name: Tree4.013 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1862616133
 Transform:
@@ -8891,8 +9561,8 @@ GameObject:
   m_Name: Tree2.029 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1870609145
 Transform:
@@ -8974,8 +9644,8 @@ GameObject:
   m_Name: Tree2.002 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1873339976
 Transform:
@@ -9057,8 +9727,8 @@ GameObject:
   m_Name: Tree4.002 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1915911202
 Transform:
@@ -9140,8 +9810,8 @@ GameObject:
   m_Name: Tree1.002 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1930296361
 Transform:
@@ -9237,9 +9907,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c78420fff6f0424459f78c2b3968a0e4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9328,12 +9998,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938337413}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.79, y: 4.577, z: 92.68}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23.240387, y: -1.6269956, z: 16.170212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1697942844}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1976439983
 GameObject:
@@ -9350,8 +10020,8 @@ GameObject:
   m_Name: Tree3.012 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1976439984
 Transform:
@@ -9433,8 +10103,8 @@ GameObject:
   m_Name: Tree3.016 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2003519685
 Transform:
@@ -9516,8 +10186,8 @@ GameObject:
   m_Name: Tree3.006 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2005588915
 Transform:
@@ -9599,8 +10269,8 @@ GameObject:
   m_Name: Tree2.038 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2030437201
 Transform:
@@ -9682,8 +10352,8 @@ GameObject:
   m_Name: Tree1.017 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2042877022
 Transform:
@@ -9765,8 +10435,8 @@ GameObject:
   m_Name: Tree2.040 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2043855595
 Transform:
@@ -9862,7 +10532,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 450bb70c7e2cf8f41a1d6c8ae222ad83, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9953,12 +10623,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052568043}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.7, y: 2.6811543, z: 61}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -101.73039, y: -3.5228415, z: -15.5097885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1697942844}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053878237
 GameObject:
@@ -9975,8 +10645,8 @@ GameObject:
   m_Name: Tree2.037 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2053878238
 Transform:
@@ -10058,8 +10728,8 @@ GameObject:
   m_Name: Tree3.023 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2054227659
 Transform:
@@ -10141,8 +10811,8 @@ GameObject:
   m_Name: Tree1.014 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2056261986
 Transform:
@@ -10224,8 +10894,8 @@ GameObject:
   m_Name: Tree1.014 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2094729786
 Transform:
@@ -10307,8 +10977,8 @@ GameObject:
   m_Name: Tree1.039 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2105325684
 Transform:
@@ -10450,7 +11120,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &14104143078713720
 GameObject:
@@ -10467,8 +11137,8 @@ GameObject:
   m_Name: Tree1.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &20721718775992343
 GameObject:
@@ -10485,8 +11155,8 @@ GameObject:
   m_Name: Tree4.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &21178848506435766
 Transform:
@@ -10517,8 +11187,8 @@ GameObject:
   m_Name: Tree2.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &36165296050993245
 MeshFilter:
@@ -10551,8 +11221,8 @@ GameObject:
   m_Name: Tree4.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &81239710411461158
 MeshRenderer:
@@ -10612,8 +11282,8 @@ GameObject:
   m_Name: Tree1.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &95776640367902117
 MeshFilter:
@@ -10652,8 +11322,8 @@ GameObject:
   m_Name: Tree4.042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &115406788467248492
 GameObject:
@@ -10670,8 +11340,8 @@ GameObject:
   m_Name: Tree4.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &123285769488206033
 MeshFilter:
@@ -10724,8 +11394,8 @@ GameObject:
   m_Name: Tree4.032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &172460065590438554
 GameObject:
@@ -10742,8 +11412,8 @@ GameObject:
   m_Name: Tree4.033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &215588539426619382
 MeshRenderer:
@@ -10874,8 +11544,8 @@ GameObject:
   m_Name: Tree4.043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &281753793814749030
 GameObject:
@@ -10892,8 +11562,8 @@ GameObject:
   m_Name: Tree3.041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &305604213755498689
 MeshRenderer:
@@ -11018,8 +11688,8 @@ GameObject:
   m_Name: Tree4.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &368380181567071082
 MeshFilter:
@@ -11058,8 +11728,8 @@ GameObject:
   m_Name: Tree4.038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &404889313200722976
 Transform:
@@ -11176,8 +11846,8 @@ GameObject:
   m_Name: Tree2.030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &433645496744864336
 Transform:
@@ -11309,8 +11979,8 @@ GameObject:
   m_Name: Tree2.041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &533509430704326558
 GameObject:
@@ -11327,8 +11997,8 @@ GameObject:
   m_Name: Tree2.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &543855113255144393
 MeshRenderer:
@@ -11706,8 +12376,8 @@ GameObject:
   m_Name: Tree1.034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &745632853714161240
 Transform:
@@ -11738,8 +12408,8 @@ GameObject:
   m_Name: Tree3.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &773722052404939202
 MeshRenderer:
@@ -11963,8 +12633,8 @@ GameObject:
   m_Name: Tree2.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &943368017300339113
 MeshRenderer:
@@ -12038,8 +12708,8 @@ GameObject:
   m_Name: Tree3.038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &951941252621307797
 Transform:
@@ -12108,8 +12778,8 @@ GameObject:
   m_Name: Tree2.052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1001566374952115340
 GameObject:
@@ -12126,8 +12796,8 @@ GameObject:
   m_Name: Tree3.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1003591022937434196
 Transform:
@@ -12158,8 +12828,8 @@ GameObject:
   m_Name: Tree3.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1042141842068877998
 MeshRenderer:
@@ -12219,8 +12889,8 @@ GameObject:
   m_Name: Tree1.047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1094270143503400589
 Transform:
@@ -12251,8 +12921,8 @@ GameObject:
   m_Name: Tree1.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1101525048186821651
 MeshRenderer:
@@ -12356,8 +13026,8 @@ GameObject:
   m_Name: Tree2.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1219843845111648006
 MeshRenderer:
@@ -12546,8 +13216,8 @@ GameObject:
   m_Name: Tree3.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1312143822781889606
 MeshFilter:
@@ -12643,8 +13313,8 @@ GameObject:
   m_Name: Tree2.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1364392006165264535
 MeshFilter:
@@ -12677,8 +13347,8 @@ GameObject:
   m_Name: Tree4.039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1415377967187317969
 GameObject:
@@ -12695,8 +13365,8 @@ GameObject:
   m_Name: Tree4.031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1415649279365893976
 Transform:
@@ -12735,8 +13405,8 @@ GameObject:
   m_Name: Tree2.042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &1451985399636489537
 GameObject:
@@ -12753,8 +13423,8 @@ GameObject:
   m_Name: Tree3.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1462289200822562501
 MeshFilter:
@@ -12779,8 +13449,8 @@ GameObject:
   m_Name: Tree2.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1468372350609913457
 MeshFilter:
@@ -12856,8 +13526,8 @@ GameObject:
   m_Name: Tree3.039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1487732184572824635
 MeshRenderer:
@@ -12931,8 +13601,8 @@ GameObject:
   m_Name: Tree3.034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1514991293106402150
 MeshRenderer:
@@ -12992,8 +13662,8 @@ GameObject:
   m_Name: Tree4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1539510573132554118
 Transform:
@@ -13156,8 +13826,8 @@ GameObject:
   m_Name: Tree4.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1676857182722799416
 MeshRenderer:
@@ -13274,8 +13944,8 @@ GameObject:
   m_Name: Tree3.042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &1737515991466213435
 MeshFilter:
@@ -13328,8 +13998,8 @@ GameObject:
   m_Name: Tree4.044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1797120830748085427
 Transform:
@@ -13374,8 +14044,8 @@ GameObject:
   m_Name: Tree3.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1858893660476780005
 Transform:
@@ -13587,8 +14257,8 @@ GameObject:
   m_Name: Tree4.040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2017036419876694977
 GameObject:
@@ -13605,8 +14275,8 @@ GameObject:
   m_Name: Tree2.039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2044910765325432414
 Transform:
@@ -13637,8 +14307,8 @@ GameObject:
   m_Name: Tree3.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2046594044681512394
 MeshFilter:
@@ -13771,8 +14441,8 @@ GameObject:
   m_Name: Tree2.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2141165016606558342
 MeshRenderer:
@@ -13848,8 +14518,8 @@ GameObject:
   m_Name: Tree3.037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2177839760544874651
 MeshRenderer:
@@ -13953,8 +14623,8 @@ GameObject:
   m_Name: Tree3.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2341857879345637093
 Transform:
@@ -14007,8 +14677,8 @@ GameObject:
   m_Name: Tree3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2363844216801726544
 Transform:
@@ -14154,8 +14824,8 @@ GameObject:
   m_Name: Tree1.031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2503602871099880576
 MeshRenderer:
@@ -14243,8 +14913,8 @@ GameObject:
   m_Name: Tree1.041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2554725891506215745
 GameObject:
@@ -14261,8 +14931,8 @@ GameObject:
   m_Name: Tree4.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2554832047348220100
 MeshFilter:
@@ -14366,8 +15036,8 @@ GameObject:
   m_Name: Tree3.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2604796695875130207
 MeshFilter:
@@ -14522,8 +15192,8 @@ GameObject:
   m_Name: Tree4.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2714943347020344493
 MeshRenderer:
@@ -14583,8 +15253,8 @@ GameObject:
   m_Name: Tree1.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2740278563639454290
 MeshRenderer:
@@ -14658,8 +15328,8 @@ GameObject:
   m_Name: Tree4.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2782917313595880932
 MeshRenderer:
@@ -14719,8 +15389,8 @@ GameObject:
   m_Name: Tree2.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2819392363454985105
 GameObject:
@@ -14737,8 +15407,8 @@ GameObject:
   m_Name: Tree3.045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2821907368326957306
 MeshFilter:
@@ -14785,8 +15455,8 @@ GameObject:
   m_Name: Tree2.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2864761268772352310
 MeshFilter:
@@ -14819,8 +15489,8 @@ GameObject:
   m_Name: Tree3.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2881365698733628631
 Transform:
@@ -14851,8 +15521,8 @@ GameObject:
   m_Name: Tree4.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &2910739795485516760
 MeshFilter:
@@ -14877,8 +15547,8 @@ GameObject:
   m_Name: Tree1.032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2943863968700022834
 Transform:
@@ -15003,8 +15673,8 @@ GameObject:
   m_Name: Tree1.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3048247346474952301
 Transform:
@@ -15035,8 +15705,8 @@ GameObject:
   m_Name: Tree4.030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3064194242947160410
 MeshFilter:
@@ -15126,8 +15796,8 @@ GameObject:
   m_Name: Tree2.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3102093846297732589
 MeshFilter:
@@ -15263,8 +15933,8 @@ GameObject:
   m_Name: Tree4.037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3213753373019707423
 GameObject:
@@ -15281,8 +15951,8 @@ GameObject:
   m_Name: Tree4.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3219949701781900836
 Transform:
@@ -15349,8 +16019,8 @@ GameObject:
   m_Name: Tree4.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3273674248967760397
 MeshRenderer:
@@ -15489,8 +16159,8 @@ GameObject:
   m_Name: Tree2.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3332808900407582637
 GameObject:
@@ -15507,8 +16177,8 @@ GameObject:
   m_Name: Tree2.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3336539825930924535
 Transform:
@@ -15553,8 +16223,8 @@ GameObject:
   m_Name: Tree2.031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3353043322208536004
 Transform:
@@ -15636,8 +16306,8 @@ GameObject:
   m_Name: Tree2.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3397575264065654923
 MeshRenderer:
@@ -15840,8 +16510,8 @@ GameObject:
   m_Name: Tree1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3425152338431346468
 GameObject:
@@ -15858,8 +16528,8 @@ GameObject:
   m_Name: Tree3.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3428949468179242232
 GameObject:
@@ -15876,8 +16546,8 @@ GameObject:
   m_Name: Tree4.045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3433164425815230330
 MeshFilter:
@@ -15910,8 +16580,8 @@ GameObject:
   m_Name: Tree3.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3463519068888824827
 Transform:
@@ -16138,8 +16808,8 @@ GameObject:
   m_Name: Tree4.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3553262701736112337
 MeshRenderer:
@@ -16335,8 +17005,8 @@ GameObject:
   m_Name: Tree2.033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3644026998189779451
 MeshFilter:
@@ -16361,8 +17031,8 @@ GameObject:
   m_Name: Tree4.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3686104741104402968
 GameObject:
@@ -16379,8 +17049,8 @@ GameObject:
   m_Name: Tree3.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3686919616372529323
 MeshFilter:
@@ -16427,8 +17097,8 @@ GameObject:
   m_Name: Tree2.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3730309572276227597
 MeshRenderer:
@@ -16502,8 +17172,8 @@ GameObject:
   m_Name: Tree1.039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3770382560928038945
 GameObject:
@@ -16520,8 +17190,8 @@ GameObject:
   m_Name: Tree2.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3774467660431796843
 Transform:
@@ -16552,8 +17222,8 @@ GameObject:
   m_Name: Tree1.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3793773237413216074
 MeshRenderer:
@@ -16621,8 +17291,8 @@ GameObject:
   m_Name: Tree1.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &3836223433938975691
 GameObject:
@@ -16639,8 +17309,8 @@ GameObject:
   m_Name: Tree2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3858669090461706952
 Transform:
@@ -16721,8 +17391,8 @@ GameObject:
   m_Name: Tree4.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &3960453417844755372
 MeshFilter:
@@ -16747,8 +17417,8 @@ GameObject:
   m_Name: Tree3.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3973276193524135503
 Transform:
@@ -16860,8 +17530,8 @@ GameObject:
   m_Name: Tree4.048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4064813123212923776
 MeshFilter:
@@ -17029,8 +17699,8 @@ GameObject:
   m_Name: Tree4.049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4118754154018320112
 MeshFilter:
@@ -17098,8 +17768,8 @@ GameObject:
   m_Name: Tree1.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4164964444908283921
 MeshFilter:
@@ -17267,8 +17937,8 @@ GameObject:
   m_Name: Tree4.036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4181605243985643143
 MeshFilter:
@@ -17293,8 +17963,8 @@ GameObject:
   m_Name: Tree3.036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &4204631499716584196
 GameObject:
@@ -17311,8 +17981,8 @@ GameObject:
   m_Name: Tree3.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4219104537798204446
 MeshFilter:
@@ -17337,8 +18007,8 @@ GameObject:
   m_Name: Tree1.033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4248679953312387075
 Transform:
@@ -17428,8 +18098,8 @@ GameObject:
   m_Name: Tree1.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4371803315867384777
 MeshFilter:
@@ -17658,8 +18328,8 @@ GameObject:
   m_Name: Tree2.044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4523494397425403016
 Transform:
@@ -17690,8 +18360,8 @@ GameObject:
   m_Name: Tree2.046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &4550982595724086076
 MeshRenderer:
@@ -17793,8 +18463,8 @@ GameObject:
   m_Name: Tree1.043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4612702832047936088
 Transform:
@@ -17911,8 +18581,8 @@ GameObject:
   m_Name: Tree2.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &4647963537991803919
 MeshRenderer:
@@ -18169,8 +18839,8 @@ GameObject:
   m_Name: Tree2.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4887921036155854557
 MeshFilter:
@@ -18195,8 +18865,8 @@ GameObject:
   m_Name: Tree3.046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &4898202711384682969
 MeshRenderer:
@@ -18307,8 +18977,8 @@ GameObject:
   m_Name: Tree3.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &4972146124498620408
 MeshFilter:
@@ -18347,8 +19017,8 @@ GameObject:
   m_Name: Tree3.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5013874489595444662
 GameObject:
@@ -18365,8 +19035,8 @@ GameObject:
   m_Name: Tree1.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5014290839741110960
 MeshRenderer:
@@ -18477,8 +19147,8 @@ GameObject:
   m_Name: Tree2.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5031540095834304561
 Transform:
@@ -18659,8 +19329,8 @@ GameObject:
   m_Name: Tree1.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5141854077340782218
 MeshFilter:
@@ -18699,8 +19369,8 @@ GameObject:
   m_Name: Tree1.040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5180766564074973108
 MeshRenderer:
@@ -18782,8 +19452,8 @@ GameObject:
   m_Name: Tree4.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5246878589971270230
 MeshFilter:
@@ -18808,8 +19478,8 @@ GameObject:
   m_Name: Tree4.035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5252208682221778486
 MeshRenderer:
@@ -18928,8 +19598,8 @@ GameObject:
   m_Name: Tree2.036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5311626860364951224
 GameObject:
@@ -18946,8 +19616,8 @@ GameObject:
   m_Name: Tree3.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5313475265114942219
 GameObject:
@@ -18964,8 +19634,8 @@ GameObject:
   m_Name: Tree3.044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5353369313313156137
 Transform:
@@ -19055,8 +19725,8 @@ GameObject:
   m_Name: Tree1.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5392323553582242356
 GameObject:
@@ -19073,8 +19743,8 @@ GameObject:
   m_Name: Tree4.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5404022777850075676
 Transform:
@@ -19366,8 +20036,8 @@ GameObject:
   m_Name: Tree1.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5598649822978813090
 MeshFilter:
@@ -19420,8 +20090,8 @@ GameObject:
   m_Name: Tree2.035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5649974030830934385
 Transform:
@@ -19713,8 +20383,8 @@ GameObject:
   m_Name: Tree2.045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5852313075337819756
 Transform:
@@ -19745,8 +20415,8 @@ GameObject:
   m_Name: Tree2.043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &5886395973913330770
 GameObject:
@@ -19763,8 +20433,8 @@ GameObject:
   m_Name: Tree1.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &5886725031662560005
 MeshRenderer:
@@ -19824,8 +20494,8 @@ GameObject:
   m_Name: Tree2.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &5921479035609687561
 MeshFilter:
@@ -20003,8 +20673,8 @@ GameObject:
   m_Name: Tree4.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6021896358648541455
 MeshRenderer:
@@ -20158,8 +20828,8 @@ GameObject:
   m_Name: Tree1.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6067915353485715690
 MeshFilter:
@@ -20184,8 +20854,8 @@ GameObject:
   m_Name: Tree2.050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6083997774026133491
 Transform:
@@ -20216,8 +20886,8 @@ GameObject:
   m_Name: Tree4.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6095816900221084322
 MeshFilter:
@@ -20242,8 +20912,8 @@ GameObject:
   m_Name: Tree1.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6180630134025949669
 Transform:
@@ -20518,8 +21188,8 @@ GameObject:
   m_Name: Tree4.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6347488308308965381
 MeshFilter:
@@ -20587,8 +21257,8 @@ GameObject:
   m_Name: Tree4.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6411962221892759383
 MeshFilter:
@@ -20729,8 +21399,8 @@ GameObject:
   m_Name: Tree3.030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6440415730870917128
 GameObject:
@@ -20747,8 +21417,8 @@ GameObject:
   m_Name: Tree3.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6444043891559284366
 MeshFilter:
@@ -20795,8 +21465,8 @@ GameObject:
   m_Name: Tree1.037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6520197959604577163
 GameObject:
@@ -20813,8 +21483,8 @@ GameObject:
   m_Name: Tree4.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6527436628010388375
 GameObject:
@@ -20831,8 +21501,8 @@ GameObject:
   m_Name: Tree2.037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6529451158495871090
 Transform:
@@ -21070,8 +21740,8 @@ GameObject:
   m_Name: Tree3.043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6618089290555039724
 GameObject:
@@ -21088,8 +21758,8 @@ GameObject:
   m_Name: Tree1.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &6644357678903022070
 GameObject:
@@ -21106,8 +21776,8 @@ GameObject:
   m_Name: Tree1.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6651553738962326508
 MeshRenderer:
@@ -21175,8 +21845,8 @@ GameObject:
   m_Name: Tree1.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6666697925706721569
 MeshFilter:
@@ -21252,8 +21922,8 @@ GameObject:
   m_Name: Tree2.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6696073979893904900
 MeshRenderer:
@@ -21321,8 +21991,8 @@ GameObject:
   m_Name: Tree1.044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6709761345636918862
 MeshRenderer:
@@ -21382,8 +22052,8 @@ GameObject:
   m_Name: Tree2.032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6729391983556986123
 Transform:
@@ -21414,8 +22084,8 @@ GameObject:
   m_Name: Tree1.036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6739554068511898908
 Transform:
@@ -21446,8 +22116,8 @@ GameObject:
   m_Name: Tree1.035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6763334076740537763
 MeshRenderer:
@@ -21564,8 +22234,8 @@ GameObject:
   m_Name: Tree1.038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6803147561050662689
 Transform:
@@ -21718,8 +22388,8 @@ GameObject:
   m_Name: Tree3.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6889465894838865503
 Transform:
@@ -21843,8 +22513,8 @@ GameObject:
   m_Name: Tree1.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &6967768221303707885
 MeshRenderer:
@@ -21969,8 +22639,8 @@ GameObject:
   m_Name: Tree3.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7021482051466072517
 MeshRenderer:
@@ -22030,8 +22700,8 @@ GameObject:
   m_Name: Tree1.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7082897554905655270
 MeshRenderer:
@@ -22091,8 +22761,8 @@ GameObject:
   m_Name: Tree4.041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7126329203705063888
 MeshRenderer:
@@ -22174,8 +22844,8 @@ GameObject:
   m_Name: Tree2.048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &7198121343753600451
 GameObject:
@@ -22192,8 +22862,8 @@ GameObject:
   m_Name: Tree2.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &7204791420784979050
 MeshFilter:
@@ -22361,8 +23031,8 @@ GameObject:
   m_Name: Tree1.042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7240680047484283177
 Transform:
@@ -22393,8 +23063,8 @@ GameObject:
   m_Name: Tree3.031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7274709413948751313
 Transform:
@@ -22439,8 +23109,8 @@ GameObject:
   m_Name: Tree4.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &7332169395076648293
 MeshFilter:
@@ -22465,8 +23135,8 @@ GameObject:
   m_Name: Tree4.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7342702880351605407
 MeshRenderer:
@@ -22901,8 +23571,8 @@ GameObject:
   m_Name: Tree2.051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7393715798485790030
 MeshRenderer:
@@ -22990,8 +23660,8 @@ GameObject:
   m_Name: Tree2.034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &7445856263999285020
 GameObject:
@@ -23008,8 +23678,8 @@ GameObject:
   m_Name: Tree1.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7458197420339414978
 Transform:
@@ -23199,8 +23869,8 @@ GameObject:
   m_Name: Tree2.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7558271552972673009
 MeshRenderer:
@@ -23260,8 +23930,8 @@ GameObject:
   m_Name: Tree1.030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &7575560023177274188
 MeshFilter:
@@ -23286,8 +23956,8 @@ GameObject:
   m_Name: Tree1.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7634929259817421913
 MeshRenderer:
@@ -23390,8 +24060,8 @@ GameObject:
   m_Name: Tree2.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7675378188063953348
 Transform:
@@ -23601,8 +24271,8 @@ GameObject:
   m_Name: Tree3.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &7787279867175927637
 MeshFilter:
@@ -23692,8 +24362,8 @@ GameObject:
   m_Name: Tree3.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &7858077570423926028
 GameObject:
@@ -23987,8 +24657,8 @@ GameObject:
   m_Name: Tree1.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8068804502773394244
 MeshFilter:
@@ -24406,8 +25076,8 @@ GameObject:
   m_Name: Tree2.038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &8258497981648645453
 GameObject:
@@ -24424,8 +25094,8 @@ GameObject:
   m_Name: Tree3.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8263969874835851957
 MeshFilter:
@@ -24658,8 +25328,8 @@ GameObject:
   m_Name: Tree2.040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8393386490269530515
 MeshFilter:
@@ -24749,8 +25419,8 @@ GameObject:
   m_Name: Tree3.032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &8434582676216668210
 MeshRenderer:
@@ -25091,8 +25761,8 @@ GameObject:
   m_Name: Tree4.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8602113814095884693
 MeshFilter:
@@ -25117,8 +25787,8 @@ GameObject:
   m_Name: Tree3.040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &8642277976267932676
 MeshRenderer:
@@ -25178,8 +25848,8 @@ GameObject:
   m_Name: Tree2.028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &8696179269958308137
 GameObject:
@@ -25196,8 +25866,8 @@ GameObject:
   m_Name: Tree3.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8718512660121267135
 MeshFilter:
@@ -25308,8 +25978,8 @@ GameObject:
   m_Name: Tree3.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8746472086673163601
 Transform:
@@ -25391,8 +26061,8 @@ GameObject:
   m_Name: Tree4.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &8806334989771538320
 MeshRenderer:
@@ -25538,8 +26208,8 @@ GameObject:
   m_Name: Tree1.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8874072882690617923
 MeshFilter:
@@ -25621,8 +26291,8 @@ GameObject:
   m_Name: Tree3.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &8886694133088768717
 GameObject:
@@ -25639,8 +26309,8 @@ GameObject:
   m_Name: Tree1.045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &8887051416404524979
 GameObject:
@@ -25657,8 +26327,8 @@ GameObject:
   m_Name: Tree1.046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8889551862133772022
 MeshFilter:
@@ -25697,8 +26367,8 @@ GameObject:
   m_Name: Tree1.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8925294534990772886
 MeshFilter:
@@ -25788,8 +26458,8 @@ GameObject:
   m_Name: Tree3.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &8980162172785961996
 GameObject:
@@ -25806,8 +26476,8 @@ GameObject:
   m_Name: Tree4.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &9003699352011024135
 MeshFilter:
@@ -25854,8 +26524,8 @@ GameObject:
   m_Name: Tree1.024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &9026795831719988079
 GameObject:
@@ -25872,8 +26542,8 @@ GameObject:
   m_Name: Tree2.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &9028438534726457965
 MeshRenderer:
@@ -26079,8 +26749,8 @@ GameObject:
   m_Name: Tree2.023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &9121076136348598412
 GameObject:
@@ -26097,8 +26767,8 @@ GameObject:
   m_Name: Tree2.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &9137735651215266080
 Transform:
@@ -26194,8 +26864,8 @@ GameObject:
   m_Name: Tree4.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &9196805491672922212
 GameObject:
@@ -26212,6 +26882,6 @@ GameObject:
   m_Name: Tree2.047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1

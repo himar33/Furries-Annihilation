@@ -26,12 +26,20 @@ public class LevelManager : MonoBehaviour
     private float transitionTime;
     public float transitionTimeSpeed;
 
+    [SerializeField]
+    private EnemySpawner[] spawns;
+
     void Start()
     {
         state = GameState.DAY;
         currStateTime = stateTime;
         transitionTime = 0.0f;
         SetSkyboxTime(transitionTime);
+
+        foreach (EnemySpawner spawn in spawns)
+        {
+            spawn.Spawn(EnemySpawner.EnemyType.EASY, 2);
+        }
     }
 
     void Update()

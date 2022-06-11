@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7171500256097743906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.3041143, y: 0.0000009536743, z: -0.47412276}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7171500256097708080}
@@ -96,7 +96,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -151,9 +151,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPos: {fileID: 0}
   player: {fileID: 0}
+  velocity: 0
   dmgHit: 0
   state: 0
-  deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74, type: 3}
+  deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74,
+    type: 3}
 --- !u!1 &7171500256097743908
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +508,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

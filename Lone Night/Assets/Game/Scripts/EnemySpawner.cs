@@ -4,26 +4,41 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public enum EnemyType
+    {
+        EASY,
+        NORMAL,
+        HARD
+    }
+
     [Header("Enemy Prefab")]
+
+    [Header("Easy Enemies")]
     [SerializeField]
-    private GameObject enemyPrefab;
+    private GameObject[] easyEnemies;
+
+    [Header("Normal Enemies")]
     [SerializeField]
-    private int nEnemies;
+    private GameObject[] normalEnemies;
+
+    [Header("Hard Enemies")]
+    [SerializeField]
+    private GameObject[] hardEnemies;
 
     [Header("Minimum Scale Range")]
-    [SerializeField, Range(0.8f, 1.2f)]
+    [SerializeField, Range(0.2f, 0.4f)]
     private float minX;
-    [SerializeField, Range(0.8f, 1.2f)]
+    [SerializeField, Range(0.2f, 0.4f)]
     private float minY;
-    [SerializeField, Range(0.8f, 1.2f)]
+    [SerializeField, Range(0.2f, 0.4f)]
     private float minZ;
 
     [Header("Maximum Scale Range")]
-    [SerializeField, Range(0.8f, 1.2f)]
+    [SerializeField, Range(0.2f, 0.4f)]
     private float maxX;
-    [SerializeField, Range(0.8f, 1.2f)]
+    [SerializeField, Range(0.2f, 0.4f)]
     private float maxY;
-    [SerializeField, Range(0.8f, 1.2f)]
+    [SerializeField, Range(0.2f, 0.4f)]
     private float maxZ;
 
     private Vector3 minScale;
@@ -33,17 +48,32 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private Collider spawnCollider;
 
-    private void Start()
+    public void Spawn(EnemyType type, int n)
     {
         Transform eRoot = GameObject.Find("EnemiesRoot").transform;
 
         minScale = new Vector3(minX, minY, minZ);
         maxScale = new Vector3(maxX, maxY, maxZ);
-        for (int i = 0; i < nEnemies; i++)
+
+        for (int i = 0; i < n; i++)
         {
-            GameObject e = enemyPrefab;
-            e.transform.localScale = GetRandomScale(minScale, maxScale);
-            Instantiate(e, GetRandomPosition(spawnCollider.bounds), e.transform.rotation, eRoot);
+            GameObject enemy = new GameObject();
+            switch (type)
+            {
+                case EnemyType.EASY:
+                    enemy = easyEnemies[Random.Range(0, easyEnemies.Length)];
+                    break;
+                case EnemyType.NORMAL:
+                    enemy = normalEnemies[Random.Range(0, normalEnemies.Length)];
+                    break;
+                case EnemyType.HARD:
+                    enemy = hardEnemies[Random.Range(0, hardEnemies.Length)];
+                    break;
+                default:
+                    break;
+            }
+            enemy.transform.localScale = GetRandomScale(minScale, maxScale);
+            Instantiate(enemy, GetRandomPosition(spawnCollider.bounds), enemy.transform.rotation, eRoot);
         }
     }
 
