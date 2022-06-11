@@ -26,22 +26,6 @@ public class m4a2 : MonoBehaviour
         }
     }
 
-    //private void OnTriggerStay(Collider other)
-    //{
-    //    if (other.transform.name == "Right Hand" || other.transform.name == "Left Hand") canShoot = true;
-    //}
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    canShoot = false;
-    //}
-
-    //public IEnumerator Firerate()
-    //{
-    //    yield return new WaitForSeconds(firerate);
-        
-    //}
-
     public void Fire()
     {
         fire = true;
