@@ -13691,7 +13691,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  bullet: {fileID: 9184665710470901440, guid: 0ac23be6467c5a240a2943f7b544b935, type: 3}
+  fireRate: 0.25
+  nextFire: 0
+  bullet: {fileID: 2201486096215302200, guid: f141684b4d8367241b11e9edf6b8386e, type: 3}
   barrel: {fileID: 175650645}
   audioSource: {fileID: 1153810670}
   audioClip: {fileID: 8300000, guid: 4d18bd5cbd5fbf640920a754a8b9e38d, type: 3}
@@ -27934,6 +27936,12 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2095505031950765310, guid: b1eccdc984286c7408ce6719e379466e,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 2201486096215302200, guid: f141684b4d8367241b11e9edf6b8386e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1eccdc984286c7408ce6719e379466e, type: 3}
 --- !u!1001 &4419088490619685165
@@ -28022,6 +28030,12 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5330159132168053523, guid: 922bf4063e911e24c852b9a0f6075cc7,
+        type: 3}
+      propertyPath: shooteffect
+      value: 
+      objectReference: {fileID: 3088721824944108971, guid: ebabd890a1187204293995611d7500c3,
+        type: 3}
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_RootOrder
@@ -28035,7 +28049,7 @@ PrefabInstance:
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5009
+      value: -2.5324
       objectReference: {fileID: 0}
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
@@ -28045,37 +28059,37 @@ PrefabInstance:
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8157903
+      value: 0.07142297
       objectReference: {fileID: 0}
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.08266925
+      value: -0.44966853
       objectReference: {fileID: 0}
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0577102
+      value: 0.8901643
       objectReference: {fileID: 0}
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.56949234
+      value: 0.017452907
       objectReference: {fileID: 0}
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -3.965
+      value: -5.469
       objectReference: {fileID: 0}
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -10.881
+      value: 173.571
       objectReference: {fileID: 0}
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 70.215
+      value: -53.294
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 922bf4063e911e24c852b9a0f6075cc7, type: 3}
@@ -28215,6 +28229,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 9080820033700238599, guid: b6fe7564b7ea53c4db679121dae45793,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 2201486096215302200, guid: f141684b4d8367241b11e9edf6b8386e,
+        type: 3}
     - target: {fileID: 9080820033700238601, guid: b6fe7564b7ea53c4db679121dae45793,
         type: 3}
       propertyPath: m_InteractionManager

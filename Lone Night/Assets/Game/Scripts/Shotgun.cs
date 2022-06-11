@@ -11,12 +11,14 @@ public class Shotgun : MonoBehaviour
     public Transform barrel;
     public AudioSource audioSource;
     public AudioClip audioClip;
+    public ParticleSystem shooteffect;
 
     public void Fire()
     {
         if (Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
+            shooteffect.Play();
             GameObject spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
             spawnedBullet.GetComponent<Rigidbody>().velocity = speed * barrel.forward;
             audioSource.PlayOneShot(audioClip);
