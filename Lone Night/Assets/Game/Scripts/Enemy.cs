@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
     protected float velocity;
     [SerializeField]
     protected float dmgHit;
+    protected int life;
 
     [SerializeField]
     protected EnemyState state;
@@ -38,6 +39,7 @@ public class Enemy : MonoBehaviour
     protected virtual void Start()
     {
         state = EnemyState.MOVE;
+        life = 4;
 
         playerPos = GameObject.Find("Player").transform;
         player = FindObjectOfType<PlayerManager>();
@@ -90,6 +92,15 @@ public class Enemy : MonoBehaviour
             state = EnemyState.ATTACK;
             agent.isStopped = true;
             anim.SetTrigger("Clicked");
+        }
+
+        if (other.tag == "Bullet")
+        {
+            life--;
+            if (life < 0)
+            {
+                state = EnemyState.DIE;
+            }
         }
     }
 

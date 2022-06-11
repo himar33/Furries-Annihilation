@@ -19,6 +19,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private float currStateTime;
 
+    private int round;
+    [SerializeField]
+    private int maxEnemiesAlive;
+
     public float stateTime;
     public float stateTimeSpeed;
 
@@ -31,6 +35,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        round = 0;
         state = GameState.DAY;
         currStateTime = stateTime;
         transitionTime = 0.0f;
