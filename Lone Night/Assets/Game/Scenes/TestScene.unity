@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.0706012, g: 0.35397732, b: 0.9713603, a: 1}
+  m_IndirectSpecularColor: {r: 0.07060189, g: 0.3540319, b: 0.971534, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1329,7 +1329,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1209605109, guid: 3735274a3b0561e45b10a1d35b948955, type: 3}
       propertyPath: recoveryMult
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2820135711376666752, guid: 3735274a3b0561e45b10a1d35b948955,
         type: 3}
@@ -1345,6 +1345,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
         type: 3}
@@ -1374,12 +1389,12 @@ PrefabInstance:
     - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5407938809174076015, guid: 3735274a3b0561e45b10a1d35b948955,
         type: 3}
@@ -6472,7 +6487,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f66862382d748124e83907bab4f7f33d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9789,7 +9804,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b357bb1806eade34bbfe62871b6338cd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.744
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

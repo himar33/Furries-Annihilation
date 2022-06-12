@@ -152,7 +152,7 @@ MonoBehaviour:
   playerPos: {fileID: 0}
   player: {fileID: 0}
   velocity: 0
-  dmgHit: 0
+  dmgHit: 5
   state: 0
   deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74,
     type: 3}

@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/TestScene.unity
     guid: 61ce0b108f4ab4946a12f59c807a07aa
+  - enabled: 1
+    path: Assets/Game/Scenes/LoseScene.unity
+    guid: 591ebafe3d961904fbc40d85de985812
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

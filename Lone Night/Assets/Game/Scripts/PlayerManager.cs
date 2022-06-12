@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -30,16 +31,22 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
+        if (currHP <= 0)
+        {
+            SceneManager.LoadScene("LoseScene");
+        }
         if (currHP < maxHP)
         {
             currHP += recoveryMult * Time.deltaTime;
             vign.intensity.value -= (recoveryMult * hpToVign * Time.deltaTime) / 2;
         }
+
     }
 
     public void Hitted(float dmg)
     {
-        if (currHP > dmg) currHP -= dmg;
+        //if (currHP > dmg)
+        currHP -= dmg;
         if (vign.intensity.value < (0.5f - (dmg * hpToVign) / 2)) vign.intensity.value += (dmg * hpToVign) / 2;
     }
 }
