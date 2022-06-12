@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    enum GameState
+    public enum GameState
     {
         DAY,
         NIGHT,
@@ -13,8 +13,7 @@ public class LevelManager : MonoBehaviour
     }
     
     //Day state variables
-    [SerializeField]
-    private GameState state;
+    public GameState state;
     private GameState lastState;
     [SerializeField]
     private float currStateTime;
@@ -110,7 +109,7 @@ public class LevelManager : MonoBehaviour
             foreach (EnemySpawner spawn in spawns)
             {
                 int n = enemiesRound / spawns.Length;
-                spawn.Spawn(EnemySpawner.EnemyType.EASY, n);
+                spawn.Spawn(state, n);
                 currEnemiesAlive += n;
             }
         }
@@ -125,7 +124,7 @@ public class LevelManager : MonoBehaviour
             foreach (EnemySpawner spawn in spawns)
             {
                 int n = enemiesRound / spawns.Length;
-                spawn.Spawn(EnemySpawner.EnemyType.EASY, n);
+                spawn.Spawn(state, n);
                 currEnemiesAlive += n;
             }
         }

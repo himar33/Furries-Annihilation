@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3335273236435798596}
-  m_LocalRotation: {x: -0, y: 0.19170913, z: -0, w: 0.98145175}
+  m_LocalRotation: {x: 0, y: 0.19170834, z: 0, w: 0.9814519}
   m_LocalPosition: {x: -11.6, y: 1.5, z: -16.2}
   m_LocalScale: {x: 20.683004, y: 0, z: 7.634917}
   m_Children: []
@@ -57,17 +57,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aafa5098e752b9429e1d84f402222d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easyEnemies:
-  - {fileID: 8344496264130045466, guid: 8c6bd2f9043950643ab0bd0b7550880c, type: 3}
-  - {fileID: 4018716651141618176, guid: f0c26ea758784d74cb3b9c7668bac778, type: 3}
+  enemiesDay:
   - {fileID: 2156138487351708410, guid: e203a27fea93c48498e2a2349a3371c8, type: 3}
-  normalEnemies:
+  - {fileID: 5205100939207135588, guid: e2fd3314b07b80b4fb9d82ee337b5d5a, type: 3}
+  - {fileID: 8344496264130045466, guid: 8c6bd2f9043950643ab0bd0b7550880c, type: 3}
+  - {fileID: 6522597663116706999, guid: 506fb6bcf146b7444af28b460a88aea3, type: 3}
+  enemiesNight:
+  - {fileID: 1925783877434013084, guid: bb106dd34e24b2641b9effdc7df286ff, type: 3}
   - {fileID: 7171500256097743906, guid: 40b905edc1d5e2445a54253a613d5285, type: 3}
   - {fileID: 7574867922547071424, guid: 41bb9c43da3cff44097654761edd3da8, type: 3}
-  - {fileID: 6522597663116706999, guid: 506fb6bcf146b7444af28b460a88aea3, type: 3}
-  hardEnemies:
-  - {fileID: 1925783877434013084, guid: bb106dd34e24b2641b9effdc7df286ff, type: 3}
-  - {fileID: 5205100939207135588, guid: e2fd3314b07b80b4fb9d82ee337b5d5a, type: 3}
+  - {fileID: 4018716651141618176, guid: f0c26ea758784d74cb3b9c7668bac778, type: 3}
   minX: 0.2
   minY: 0.2
   minZ: 0.2

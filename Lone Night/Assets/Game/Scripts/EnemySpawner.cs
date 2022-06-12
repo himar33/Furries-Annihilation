@@ -4,26 +4,15 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public enum EnemyType
-    {
-        EASY,
-        NORMAL,
-        HARD
-    }
 
     [Header("Enemy Prefab")]
 
-    [Header("Easy Enemies")]
+    [Header("Day")]
     [SerializeField]
-    private GameObject[] easyEnemies;
-
-    [Header("Normal Enemies")]
+    private GameObject[] enemiesDay;
+    [Header("Night")]
     [SerializeField]
-    private GameObject[] normalEnemies;
-
-    [Header("Hard Enemies")]
-    [SerializeField]
-    private GameObject[] hardEnemies;
+    private GameObject[] enemiesNight;
 
     [Header("Minimum Scale Range")]
     [SerializeField, Range(0.2f, 0.4f)]
@@ -48,7 +37,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private Collider spawnCollider;
 
-    public void Spawn(EnemyType type, int n)
+    public void Spawn(LevelManager.GameState state, int n)
     {
         Transform eRoot = GameObject.Find("EnemiesRoot").transform;
 
@@ -58,20 +47,10 @@ public class EnemySpawner : MonoBehaviour
         for (int i = 0; i < n; i++)
         {
             GameObject enemy = null;
-            switch (type)
-            {
-                case EnemyType.EASY:
-                    enemy = easyEnemies[Random.Range(0, easyEnemies.Length)];
-                    break;
-                case EnemyType.NORMAL:
-                    enemy = normalEnemies[Random.Range(0, normalEnemies.Length)];
-                    break;
-                case EnemyType.HARD:
-                    enemy = hardEnemies[Random.Range(0, hardEnemies.Length)];
-                    break;
-                default:
-                    break;
-            }
+            if (state == LevelManager.GameState.DAY)
+                enemy = enemiesDay[Random.Range(0, enemiesDay.Length)];
+            else if (state == LevelManager.GameState.NIGHT)
+                enemy = enemiesNight[Random.Range(0, enemiesNight.Length)];
             enemy.transform.localScale = GetRandomScale(minScale, maxScale);
             Instantiate(enemy, GetRandomPosition(spawnCollider.bounds), enemy.transform.rotation, eRoot);
         }
