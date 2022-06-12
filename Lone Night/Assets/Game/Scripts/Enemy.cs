@@ -28,6 +28,7 @@ public class Enemy : MonoBehaviour
 
     [SerializeField]
     protected EnemyState state;
+    private EnemyState lastState;
 
     [SerializeField]
     protected ParticleSystem deathParticle;
@@ -68,6 +69,7 @@ public class Enemy : MonoBehaviour
                 anim.SetTrigger("Spin");
                 break;
             case EnemyState.HIT:
+                anim.SetTrigger("Peck");
                 break;
             default:
                 break;
@@ -107,6 +109,11 @@ public class Enemy : MonoBehaviour
             {
                 state = EnemyState.DIE;
             }
+            else
+            {
+                lastState = state;
+                state = EnemyState.HIT;
+            }
         }
     }
 
@@ -120,5 +127,11 @@ public class Enemy : MonoBehaviour
             agent.isStopped = false;
             anim.SetTrigger("Walk");
         }
+    }
+
+    protected void HitAnim()
+    {
+        state = lastState;
+        anim.SetTrigger("Walk");
     }
 }
