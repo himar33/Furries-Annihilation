@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
     protected NavMeshAgent agent;
     protected Animator anim;
     protected bool canHit = false;
+    protected AudioSource hitSFX;
 
     protected virtual void Start()
     {
@@ -48,6 +49,7 @@ public class Enemy : MonoBehaviour
 
         anim = GetComponent<Animator>();
         anim.SetTrigger("Walk");
+        hitSFX = GameObject.Find("hitSFX").GetComponent<AudioSource>(); 
     }
 
     protected virtual void Update()
@@ -95,6 +97,7 @@ public class Enemy : MonoBehaviour
 
         if (other.tag == "Bullet")
         {
+            hitSFX.PlayOneShot(hitSFX.clip);
             life--;
             if (life < 0)
             {
