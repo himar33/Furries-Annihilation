@@ -18,3 +18,5 @@ Features:
 - 6 degrees of freedom.
 - Grab interaction (works with distance) - L/R Grip
 - Fire with a weapon (must be on hand) - L/R Trigger
+
+Made and tested on Oculus Quest 2
