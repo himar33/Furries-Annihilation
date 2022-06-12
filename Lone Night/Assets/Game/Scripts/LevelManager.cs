@@ -19,9 +19,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private float currStateTime;
 
-    private int round;
     [SerializeField]
-    private int maxEnemiesAlive;
+    private int round;
+    public int currEnemiesAlive;
+    private int enemiesRound;
 
     public float stateTime;
     public float stateTimeSpeed;
@@ -36,15 +37,14 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         round = 0;
-        state = GameState.DAY;
-        currStateTime = stateTime;
-        transitionTime = 0.0f;
-        SetSkyboxTime(transitionTime);
 
-        foreach (EnemySpawner spawn in spawns)
-        {
-            spawn.Spawn(EnemySpawner.EnemyType.EASY, 2);
-        }
+        currStateTime = stateTime;
+        transitionTime = 1.0f;
+        currEnemiesAlive = 0;
+        lastState = GameState.NIGHT;
+        state = GameState.TRANSTION;
+
+        SetSkyboxTime(transitionTime);
     }
 
     void Update()
@@ -83,22 +83,16 @@ public class LevelManager : MonoBehaviour
 
     private void UpdateNight()
     {
-        UpdateStateTime();
-        //Night logic
+        if (currEnemiesAlive <= 0)
+        {
+            state = GameState.TRANSTION;
+        }
     }
 
     private void UpdateDay()
     {
-        UpdateStateTime();
-        //Day logic
-    }
-
-    private void UpdateStateTime()
-    {
-        currStateTime -= stateTimeSpeed * Time.deltaTime;
-        if (currStateTime <= 0)
+        if (currEnemiesAlive <= 0)
         {
-            lastState = state;
             state = GameState.TRANSTION;
         }
     }
@@ -109,11 +103,31 @@ public class LevelManager : MonoBehaviour
         {
             currStateTime = stateTime;
             state = GameState.NIGHT;
+            lastState = GameState.NIGHT;
+
+            round++;
+            enemiesRound = round * 2 + 5;
+            foreach (EnemySpawner spawn in spawns)
+            {
+                int n = enemiesRound / spawns.Length;
+                spawn.Spawn(EnemySpawner.EnemyType.EASY, n);
+                currEnemiesAlive += n;
+            }
         }
         else if (transitionTime <= 0)
         {
             currStateTime = stateTime;
             state = GameState.DAY;
+            lastState = GameState.DAY;
+
+            round++;
+            enemiesRound = round * 2 + 5;
+            foreach (EnemySpawner spawn in spawns)
+            {
+                int n = enemiesRound / spawns.Length;
+                spawn.Spawn(EnemySpawner.EnemyType.EASY, n);
+                currEnemiesAlive += n;
+            }
         }
     }
 
