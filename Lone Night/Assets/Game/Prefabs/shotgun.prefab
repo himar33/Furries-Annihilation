@@ -359,7 +359,7 @@ MonoBehaviour:
   speed: 40
   fireRate: 1
   nextFire: 0
-  bullet: {fileID: 9184665710470901440, guid: 0ac23be6467c5a240a2943f7b544b935, type: 3}
+  bullet: {fileID: 2201486096215302200, guid: f141684b4d8367241b11e9edf6b8386e, type: 3}
   barrel: {fileID: 5330159132722912413}
   barrel2: {fileID: 8625447137981789312}
   audioSource: {fileID: 5330159132168053522}
