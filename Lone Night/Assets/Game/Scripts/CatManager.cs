@@ -13,4 +13,9 @@ public class CatManager : Enemy
     {
         base.Update();
     }
+
+    public void Steps()
+    {
+        
+    }
 }

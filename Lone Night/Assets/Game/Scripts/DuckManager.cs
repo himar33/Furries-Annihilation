@@ -13,4 +13,9 @@ public class DuckManager : Enemy
     {
         base.Update();
     }
+
+    public void Steps()
+    {
+
+    }
 }

@@ -13,4 +13,9 @@ public class HornbillManager : Enemy
     {
         base.Update();
     }
+
+    public void Steps()
+    {
+
+    }
 }

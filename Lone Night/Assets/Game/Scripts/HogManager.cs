@@ -13,4 +13,9 @@ public class HogManager : Enemy
     {
         base.Update();
     }
+
+    public void Steps()
+    {
+
+    }
 }

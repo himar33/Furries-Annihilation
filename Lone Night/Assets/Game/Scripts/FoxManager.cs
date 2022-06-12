@@ -13,4 +13,9 @@ public class FoxManager : Enemy
     {
         base.Update();
     }
+
+    public void Steps()
+    {
+
+    }
 }

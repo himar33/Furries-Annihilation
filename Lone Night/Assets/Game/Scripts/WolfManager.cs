@@ -13,4 +13,9 @@ public class WolfManager : Enemy
     {
         base.Update();
     }
+
+    public void Steps()
+    {
+
+    }
 }

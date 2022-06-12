@@ -23,4 +23,9 @@ public class RabbitManager : Enemy
     {
         agent.isStopped = false;
     }
+
+    public void Steps()
+    {
+
+    }
 }

@@ -13,4 +13,9 @@ public class OwlManager : Enemy
     {
         base.Update();
     }
+    public void Steps()
+    {
+
+    }
+
 }
