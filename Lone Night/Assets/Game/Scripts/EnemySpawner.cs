@@ -57,7 +57,7 @@ public class EnemySpawner : MonoBehaviour
 
         for (int i = 0; i < n; i++)
         {
-            GameObject enemy = new GameObject();
+            GameObject enemy = null;
             switch (type)
             {
                 case EnemyType.EASY:
