@@ -19,11 +19,13 @@ public class PlayerManager : MonoBehaviour
     private Vignette vign;
     [SerializeField]
     private PostProcessVolume volume;
+    protected AudioSource hitSFX;
 
     private void Start()
     {
         volume = FindObjectOfType<PostProcessVolume>();
         volume.profile.TryGetSettings(out vign);
+        hitSFX = GameObject.Find("PlayerhitSFX").GetComponent<AudioSource>();
 
         currHP = maxHP;
         hpToVign = 1.0f / maxHP;
@@ -47,6 +49,7 @@ public class PlayerManager : MonoBehaviour
     {
         //if (currHP > dmg)
         currHP -= dmg;
+        hitSFX.Play();
         if (vign.intensity.value < (0.5f - (dmg * hpToVign) / 2)) vign.intensity.value += (dmg * hpToVign) / 2;
     }
 }
