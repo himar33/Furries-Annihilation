@@ -37,9 +37,12 @@ public class LevelManager : MonoBehaviour
     public TMP_Text enemiesUI;
     [SerializeField]
     private TMP_Text dayUI;
+    private Timer timer;
 
     void Start()
     {
+        timer = gameObject.GetComponent<Timer>();
+
         round = 0;
         dayUI.text = "ROUND: " + round.ToString();
 
@@ -109,6 +112,7 @@ public class LevelManager : MonoBehaviour
     {
         if (transitionTime >= 1)
         {
+            timer.StartTimer();
             currStateTime = stateTime;
             state = GameState.NIGHT;
             lastState = GameState.NIGHT;
@@ -128,6 +132,7 @@ public class LevelManager : MonoBehaviour
         }
         else if (transitionTime <= 0)
         {
+            timer.StartTimer();
             currStateTime = stateTime;
             state = GameState.DAY;
             lastState = GameState.DAY;
@@ -150,5 +155,15 @@ public class LevelManager : MonoBehaviour
     private void SetSkyboxTime(float value)
     {
         RenderSettings.skybox.SetFloat("_CubemapTransition", value);
+    }
+
+    public void EndRound()
+    {
+        state = GameState.TRANSTION;
+        GameObject g = GameObject.Find("EnemiesRoot");
+        for (var i = g.transform.childCount - 1; i >= 0; i--)
+        {
+            Destroy(g.transform.GetChild(i).gameObject);
+        }
     }
 }
