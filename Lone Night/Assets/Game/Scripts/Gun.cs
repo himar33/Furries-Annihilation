@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public float speed = 20;
+    public float speed = 10;
     public float fireRate = 0.25f;
     public float nextFire = 0;
     public GameObject bullet;
