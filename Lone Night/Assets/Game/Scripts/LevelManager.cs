@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         round = 0;
-        dayUI.text = "DAY: " + round.ToString();
+        dayUI.text = "ROUND: " + round.ToString();
 
         currStateTime = stateTime;
         transitionTime = 1.0f;
@@ -114,7 +114,7 @@ public class LevelManager : MonoBehaviour
             lastState = GameState.NIGHT;
 
             round++;
-            dayUI.text = "DAY: " + round.ToString();
+            dayUI.text = "ROUND: " + round.ToString();
 
             enemiesRound = round * 2 + 5;
 
@@ -133,7 +133,7 @@ public class LevelManager : MonoBehaviour
             lastState = GameState.DAY;
 
             round++;
-            dayUI.text = "DAY: " + round.ToString();
+            dayUI.text = "ROUND: " + round.ToString();
 
             enemiesRound = round * 2 + 5;
 
