@@ -28237,6 +28237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: shotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 5330159132168053523, guid: 922bf4063e911e24c852b9a0f6075cc7,
+        type: 3}
+      propertyPath: barrel2
+      value: 
+      objectReference: {fileID: 5330159133114737960}
     - target: {fileID: 5652648656126494745, guid: 922bf4063e911e24c852b9a0f6075cc7,
         type: 3}
       propertyPath: m_RootOrder
@@ -28294,6 +28299,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 922bf4063e911e24c852b9a0f6075cc7, type: 3}
+--- !u!4 &5330159133114737960 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8625447137981789312, guid: 922bf4063e911e24c852b9a0f6075cc7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5330159133114737959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8368317131306003034
 PrefabInstance:
   m_ObjectHideFlags: 0
