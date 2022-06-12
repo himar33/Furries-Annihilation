@@ -19,8 +19,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private float currStateTime;
 
-    [SerializeField]
-    private int round;
+    public static int round;
     public int currEnemiesAlive;
     private int enemiesRound;
 
