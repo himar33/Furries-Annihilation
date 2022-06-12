@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.070607394, g: 0.35383356, b: 0.97102034, a: 1}
+  m_IndirectSpecularColor: {r: 0.07094258, g: 0.35416305, b: 0.9709852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -381,9 +381,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
         type: 3}
+      propertyPath: dayUI
+      value: 
+      objectReference: {fileID: 602904933}
+    - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
       propertyPath: state
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
+        type: 3}
+      propertyPath: enemiesUI
+      value: 
+      objectReference: {fileID: 114397881}
     - target: {fileID: 3834325481247372924, guid: 4d29cf7b23f071745a9ec3f7803b4b43,
         type: 3}
       propertyPath: spawns.Array.size
@@ -6486,7 +6496,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0d289f85787203c4b9e433b7004833ae, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
   Loop: 0

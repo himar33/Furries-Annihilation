@@ -74,6 +74,7 @@ public class Enemy : MonoBehaviour
     protected void Explosion()
     {
         FindObjectOfType<LevelManager>().currEnemiesAlive--;
+        FindObjectOfType<LevelManager>().enemiesUI.text = "ENEMIES LEFT: " + FindObjectOfType<LevelManager>().currEnemiesAlive;
         ParticleSystem particles = Instantiate(deathParticle, transform.position, transform.rotation, GameObject.Find("pendingToDelete").transform);
         Destroy(particles.gameObject, 2.0f);
         Destroy(gameObject);

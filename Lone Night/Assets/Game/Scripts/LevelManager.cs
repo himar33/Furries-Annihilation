@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
@@ -33,13 +34,21 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private EnemySpawner[] spawns;
 
+    public TMP_Text enemiesUI;
+    [SerializeField]
+    private TMP_Text dayUI;
+
     void Start()
     {
         round = 0;
+        dayUI.text = "DAY: " + round.ToString();
 
         currStateTime = stateTime;
         transitionTime = 1.0f;
+
         currEnemiesAlive = 0;
+        enemiesUI.text = "ENEMIES LEFT: " + currEnemiesAlive;
+
         lastState = GameState.NIGHT;
         state = GameState.TRANSTION;
 
@@ -105,12 +114,16 @@ public class LevelManager : MonoBehaviour
             lastState = GameState.NIGHT;
 
             round++;
+            dayUI.text = "DAY: " + round.ToString();
+
             enemiesRound = round * 2 + 5;
+
             foreach (EnemySpawner spawn in spawns)
             {
                 int n = enemiesRound / spawns.Length;
                 spawn.Spawn(state, n);
                 currEnemiesAlive += n;
+                enemiesUI.text = "ENEMIES LEFT: " + currEnemiesAlive;
             }
         }
         else if (transitionTime <= 0)
@@ -120,12 +133,16 @@ public class LevelManager : MonoBehaviour
             lastState = GameState.DAY;
 
             round++;
+            dayUI.text = "DAY: " + round.ToString();
+
             enemiesRound = round * 2 + 5;
+
             foreach (EnemySpawner spawn in spawns)
             {
                 int n = enemiesRound / spawns.Length;
                 spawn.Spawn(state, n);
                 currEnemiesAlive += n;
+                enemiesUI.text = "ENEMIES LEFT: " + currEnemiesAlive;
             }
         }
     }
