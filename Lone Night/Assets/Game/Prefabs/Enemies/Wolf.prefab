@@ -436,6 +436,7 @@ MonoBehaviour:
   state: 0
   deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74,
     type: 3}
+  moveSFX: {fileID: 988645605748396399, guid: f285dfdb4dabca64aac9b8d01a4c3f9d, type: 3}
 --- !u!1 &1925783877434013086
 GameObject:
   m_ObjectHideFlags: 0

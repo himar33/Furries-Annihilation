@@ -36,6 +36,8 @@ public class Enemy : MonoBehaviour
     protected Animator anim;
     protected bool canHit = false;
     protected AudioSource hitSFX;
+    [SerializeField]
+    protected GameObject moveSFX;
 
     protected virtual void Start()
     {
@@ -49,7 +51,8 @@ public class Enemy : MonoBehaviour
 
         anim = GetComponent<Animator>();
         anim.SetTrigger("Walk");
-        hitSFX = GameObject.Find("hitSFX").GetComponent<AudioSource>(); 
+        hitSFX = GameObject.Find("hitSFX").GetComponent<AudioSource>();
+        Instantiate(moveSFX, transform.position, transform.rotation, transform); // :D
     }
 
     protected virtual void Update()

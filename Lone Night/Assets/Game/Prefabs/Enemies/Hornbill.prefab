@@ -276,7 +276,7 @@ Transform:
   m_GameObject: {fileID: 6522597663116706999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.26784882, y: 0.27722543, z: 0.22293094}
+  m_LocalScale: {x: 0.38236475, y: 0.35969165, z: 0.21902326}
   m_Children:
   - {fileID: 6522597663116548241}
   - {fileID: 6522597663116548255}
@@ -372,6 +372,7 @@ MonoBehaviour:
   state: 0
   deathParticle: {fileID: 6237553109302029179, guid: 028315ff90f3b77478f6282592e23c74,
     type: 3}
+  moveSFX: {fileID: 988645605748396399, guid: f285dfdb4dabca64aac9b8d01a4c3f9d, type: 3}
 --- !u!1 &6522597663116707001
 GameObject:
   m_ObjectHideFlags: 0
